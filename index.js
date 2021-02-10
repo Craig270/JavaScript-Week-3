@@ -64,13 +64,16 @@ for (var i = 0; i < nameLengths.length; i++) {
 
 
 
+function concatMe(word, n) {
+    var bigWord = " ";
+    while (n > 0) {
+        bigWord += word;
+        n--
+    }
+    console.log(bigWord);
+}
 
-
-
-
-
-
-
+concatMe("water", 15);
 
 
 
