@@ -1,6 +1,6 @@
 'use strict'
 
-var ages = [3, 9, 23, 64, 2, 8, 28, 93];
+// var ages = [3, 9, 23, 64, 2, 8, 28, 93];
 
 var lastNum = (ages[ages.length - 1]);
 var math = lastNum - ages[0];
@@ -152,54 +152,30 @@ biggerArray(sixtyDotSix, fiftyFiv);
 
 
 
+function willBuyDrink(isHotOutside, moneyInPocket) {
+    if (isHotOutside === true && moneyInPocket >= 10.51) {
+        console.log('true');
+        return true;
+    }
+}
+willBuyDrink(true, 20)
 
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-console.log(" ")
-console.log(" ")
-console.log(" ")
-console.log(" ")
-console.log(" ")
-console.log(" ")
-console.log(" ")
-console.log(" ")
-console.log(`Everything below this line is test`);
-
-var bigNames = ["Craig", "Jennifer", "Holden", "Moxie"];
-var smallNames = " ";
-
-
-for (let i = 0; i < bigNames.length - 1; i++) {
-    console.log(bigNames[i]);
+//Takes a boolian if snow is on the ground, a number for snow amount in inches, and the last paramedter is the amount of people on the sledding hill. Console logs a short statment if you should go sledding or why you shouldn't.
+function shouldWeSled(snowOnGround, inchOfSnow, numberPeople) {
+    if (snowOnGround === true && inchOfSnow >= 3 && numberPeople < 20) {
+        console.log('You should totally go sledding today!')
+    } else if (snowOnGround === true && inchOfSnow < 3 || numberPeople > 20) {
+        console.log('Today may not be a good day to go sledding because of the amount of people or the lack of snow.')
+    } else if (snowOnGround === false) {
+        console.log(`We need snow to go sleeding. Today is not a good day for sledding!`)
+    }
 }
 
-bigNames[0] + smallNames;
 
-console.log(smallNames);
+shouldWeSled(true, 5, 9);
+shouldWeSled(true, 3, 19);
+shouldWeSled(true, 5, 21);
+shouldWeSled(false, 0, 9);
