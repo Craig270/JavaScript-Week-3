@@ -70,13 +70,18 @@ function concatMe(word, n) {
         bigWord += word;
         n--
     }
+    return bigWord;
     console.log(bigWord);
 }
 
 concatMe("water", 15);
 
+function nameMaker(firstName, lastName) {
+    console.log(firstName + " " + lastName)
+}
 
 
+nameMaker("Craig", "Neff")
 
 
 
