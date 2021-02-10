@@ -70,14 +70,15 @@ function concatMe(word, n) {
         bigWord += word;
         n--
     }
-    return bigWord;
     console.log(bigWord);
+    return bigWord;
 }
 
 concatMe("water", 15);
 
 function nameMaker(firstName, lastName) {
-    console.log(firstName + " " + lastName)
+    console.log(firstName + " " + lastName);
+    return firstName + " " + lastName;
 }
 
 
@@ -90,6 +91,7 @@ function biggerHundred(array) {
     }
     if (sum > 100) {
         console.log('True')
+        return true
     }
 }
 
@@ -101,17 +103,14 @@ biggerHundred(bigArray);
 
 
 
-
-
-
-
-
 function averageArray(array) {
     let sum = 0;
     let devilby = array.length;
     for (var i = 0; i < array.length; i++) {
         sum += array[i];
-    } console.log(sum / array.length)
+    }
+    console.log(sum / array.length);
+    return sum / array.length;
 };
 
 let fiftyFiv = [10, 20, 30, 40, 50, 60, 70, 80, 90, 100];
@@ -119,6 +118,56 @@ let fiftyFiv = [10, 20, 30, 40, 50, 60, 70, 80, 90, 100];
 
 
 averageArray(fiftyFiv);
+
+
+
+
+
+
+function biggerArray(array1, array2) {
+    var sum1 = 0;
+    var sum2 = 0;
+    for (var i = 0; i < array1.length; i++) {
+        sum1 += array1[i];
+    }
+    for (var i = 0; i < array2.length; i++) {
+        sum2 += array2[i];
+    }
+    var sum1Average = sum1 / array1.length;
+    var sum2Average = sum2 / array2.length;
+    if (sum1Average > sum2Average) {
+        console.log('true');
+        return true;
+
+    }
+
+}
+
+let fiftyFiv = [10, 20, 30, 40, 50, 60, 70, 80, 90, 100];
+let sixtyDotSix = [11, 22, 33, 44, 55, 66, 77, 88, 99, 111];
+
+biggerArray(sixtyDotSix, fiftyFiv);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
