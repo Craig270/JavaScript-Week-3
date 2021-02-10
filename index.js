@@ -83,8 +83,20 @@ function nameMaker(firstName, lastName) {
 
 nameMaker("Craig", "Neff")
 
+function biggerHundred(array) {
+    let sum = 0
+    for (var i = 0; i <= array.length - 1; i++) {
+        sum += array[i];
+    }
+    if (sum > 100) {
+        console.log('True')
+    }
+}
 
 
+var bigArray = [10, 50, 30, 20, 10, 23, 80];
+var smallArray = [1, 2, 3, 1];
+biggerHundred(bigArray);
 
 
 
