@@ -102,6 +102,37 @@ biggerHundred(bigArray);
 
 
 
+
+
+
+
+function averageArray(array) {
+    let sum = 0;
+    let devilby = array.length;
+    for (var i = 0; i < array.length; i++) {
+        sum += array[i];
+    } console.log(sum / array.length)
+};
+
+let fiftyFiv = [10, 20, 30, 40, 50, 60, 70, 80, 90, 100];
+
+
+
+averageArray(fiftyFiv);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 console.log(" ")
 console.log(" ")
 console.log(" ")
