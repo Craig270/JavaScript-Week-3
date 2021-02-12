@@ -24,8 +24,8 @@ for (var i = 0; i <= ages.length - 1; i++) {
     console.log(ages[i])
     sum += ages[i];
 }
-console.log(sum); //All ages added up 
-console.log(sum / ages.length); //Average - Sum divided by the length of the ages array 
+console.log(sum); //All ages added up
+console.log(sum / ages.length); //Average - Sum divided by the length of the ages array
 
 
 //iterate through array and calculate average number of letters per name
@@ -82,7 +82,7 @@ function concatMe(word, n) {
 }
 concatMe("water", 15);
 
-//function that takes two parameters, firstName and lastName, and returns a full name seperated by a space 
+//function that takes two parameters, firstName and lastName, and returns a full name seperated by a space
 function nameMaker(firstName, lastName) {
     console.log(firstName + " " + lastName);
     return firstName + " " + lastName;
@@ -175,3 +175,7 @@ shouldWeSled(true, 5, 9);
 shouldWeSled(true, 3, 19);
 shouldWeSled(true, 5, 21);
 shouldWeSled(false, 0, 9);
+
+
+
+
