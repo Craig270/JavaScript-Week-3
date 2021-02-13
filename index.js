@@ -233,3 +233,16 @@ function indexInArray(arrayString, arrayWeWant) {
 
 
 indexInArray(familyNeff, "Holden");
+
+
+
+
+var family = ['Craig', 'Jennifer', 'Holden', "Moxie"];
+
+
+function quizQuestion(array1, wordWeWant) {
+    console.log(array1.indexOf(wordWeWant));
+}
+
+
+quizQuestion(family, "Holden");
