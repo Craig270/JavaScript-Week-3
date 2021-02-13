@@ -179,3 +179,57 @@ shouldWeSled(false, 0, 9);
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// Bad attempts at: 
+
+// Write a function that takes two arguments, an array of strings and a string. The function should return the index in the array that the string is located at. If the string is not found in the array return -1. 
+
+let familyNeff = ["Holden", "Craig", "Jenifer", "Moxie", "Baby Boy"]
+
+
+function indexInArray(arrayString, arrayWeWant) {
+    for (var i = 0; i < arrayString.length; i++) {
+        if (arrayString[i] === arrayWeWant) {
+            console.log(arrayString.findIndex(arrayWeWant));
+            return arrayString.findIndex(arrayWeWant);
+        } else if (i == arrayString.length) {
+            console.log(-1);
+            return -1;
+        }
+    }
+};
+
+console.log(familyNeff.includes("Craig"))
+
+
+
+function indexInArray(arrayString, arrayWeWant) {
+    check = arrayString.toString()
+    check2 = arrayWeWant.toString()
+    if (check.includes(check2)) {
+        console.log(arrayString.findIndex(arrayWeWant));
+    } else {
+        console.log(-1);
+    }
+
+};
+
+
+
+
+indexInArray(familyNeff, "Holden");
